@@ -9,4 +9,8 @@ final class LabelCell: UICollectionViewCell {
         layer.borderWidth = 1
         layer.borderColor = UIColor.gray.cgColor
     }
+    
+    override func prepareForReuse() {
+        label.textColor = .black
+    }
 }
